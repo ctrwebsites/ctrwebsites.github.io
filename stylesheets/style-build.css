@@ -1,0 +1,115 @@
+/* Basic stuff */
+html{
+	background: #eee;
+}
+h1{
+	text-align: center;
+	font-size: 75px;
+	padding: 10px;
+	margin: auto;
+	margin-right: 20px;
+	font-family: 'trebuchet';
+
+}
+body{ 	/* site + background */
+  padding: 0px;
+  margin: 10px auto 0 auto;
+  font-family: 'Trebuchet MS';
+  background: #fff;
+  color: #444; /* text colour */
+  max-width: 900px;
+ }
+#header_table{
+	width: 100%;
+	margin: 10px 20px;
+}
+#logo{
+	width: 150px;
+}
+table,th,td{
+	border-collapse: collapse;
+}
+img{
+	max-width: 100%; /* 100% is site width */
+}
+footer{
+	background: #333;
+	color: #fff;
+	padding: .1em 3em;
+	width: auto;
+	height: auto;	
+}
+
+
+/* Navbar */
+#navbar{
+	background-color: #f90;
+	overflow: hidden;
+	width: auto;
+	margin: 0px;
+	text-align: center;
+}
+#nav_li{
+	float: left;
+	display: inline;
+	text-align: center;
+}
+#nav_a{
+	text-decoration: none;	
+	margin: 10px;
+	display: inline-block;
+	color: white;
+}
+#nav_a:hover, #nav_a:focus{
+	color: #444;
+}
+#nav_a:active{
+	position: relative;
+	top:1px;
+}
+
+
+/* Other */
+[role=main]{
+	padding: 1.5em 3em;
+}
+#title_image{
+	margin-top: 10px;
+}
+#quote{
+	font-weight: bold;
+	font-style: oblique;
+}
+#bold{
+	font-weight: bold;
+}
+#neat_image{
+	width: 30%;
+	display: inline-block;
+	margin: 20px 7px;
+}
+#image_div{
+	margin: auto;
+}
+
+
+
+
+/* Media queries for smaller screens*/
+
+@media screen and (max-width : 350px){
+	/* reduce padding & margins */
+	header nav a{padding:.7em .7em; }
+	[role=main], footer {padding:1.5em; }
+	body{margin: 0 auto;}
+	
+	#neat_image{width: 100%;}
+	
+	/* make navbar vertical */
+	#nav_li{text-align: center; border-bottom: 1px solid #eee;}
+	#nav_li, #navbar_a{width: 100%;}
+	#nav_a{margin: 2px;}
+	#navbar{padding: 0px;}
+	h1{margin-top: 0px;}
+	
+}

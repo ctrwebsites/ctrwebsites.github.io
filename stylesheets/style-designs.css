@@ -1,0 +1,131 @@
+/* First stuff */
+h1{
+	font-size: 85px;
+	margin-bottom: 0px;	
+	margin-top: 10px;
+}
+h3{
+	margin-top: 2px;
+	margin-bottom: 40px;
+}
+h1,h3{
+	font-family: 'Tahoma';
+}
+body{ 	/* site + background */
+  font-size: 20px;
+  padding: 0px;
+  margin: 100px auto;
+  font-family: 'corbel','arial';
+  background: #fff;
+  color: #444; /* text colour */
+  max-width: 1200px;
+  max-height: 900px;
+
+ }
+table{
+	width: 100%;
+}
+#pane{
+	background: #acf;
+	border-right: 7px solid #333;
+	
+}
+table,th,td{
+	text-align: left;
+	border-collapse: collapse;
+}
+footer{
+	color: #bbb;
+	padding: .1em 3em;
+	width: auto;	
+}
+
+
+/* Images*/
+img{
+	padding: 10px;
+}
+#title-image{
+	width: 60%;
+	margin: 10px auto 0px auto;
+}
+#image-div{
+	margin: 20px auto;
+	float: none;
+}
+#photo{
+	max-width: 30%; /* 100% is site width */
+	border: 5px solid #617f57;
+	padding: 0px;
+	margin: 10px;
+}
+#gallery-photo{
+	width: 100%;
+}
+
+/* Navbar */
+
+#nav_li{
+	
+	list-style-type: none;
+	text-align: left;
+	margin: 0px 30px 20px 0px;
+	border-left: 3px solid #fff;
+}
+#nav_a{
+	text-decoration: none;	
+	margin: 10px;
+	display: inline-block;
+	color: white;
+}
+#nav_a:hover, #nav_a:focus{
+	position: relative;
+	left:10px;
+}
+
+
+/* Other */
+#main{
+	margin-left: 20px;
+}
+#title_image{
+	margin-top: 10px;
+}
+#quote{
+	font-weight: bold;
+	font-style: oblique;
+}
+#bold{
+	font-weight: bold;
+}
+#neat_image{
+	width: 350px;
+	display: inline;
+	float: left;
+	margin-left: auto;
+    margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+
+/* Media queries for smaller screens*/
+
+@media screen and (max-width : 350px){
+	/* reduce padding & margins */
+	nav a{padding:.7em .7em; }
+	footer {padding:1.5em; }
+	body{margin: 0 auto; font-size:10px;}
+	#photo{max-width: 90%}
+	#title-image{width: 100%;}
+	
+	/* make navbar vertical */
+	#nav_li{text-align: center; border-bottom: 1px solid #eee;}
+	#nav_li, #navbar_a{width: 100%;}
+	#nav_a{margin: 2px;}
+	#navbar{padding: 0px;}
+	h1{margin-top: 0px; font-size: 50px;}
+	
+}

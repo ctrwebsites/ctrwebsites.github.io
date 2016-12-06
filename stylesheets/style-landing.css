@@ -1,0 +1,34 @@
+body{ 	/* site + background */
+  font-size: 20px;
+  padding: 0px;
+  margin: 100px auto;
+  font-family: 'corbel','arial';
+  background: #fff;
+  color: #444; /* text colour */
+  max-width: 750px;
+
+
+}
+.footer-link{
+	color: #000;
+	font-weight: bold;
+	background-color: #eee;
+	padding: 10px;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+.footer-link:first-child{
+	margin-left: 0px;
+}
+h1{
+	color: #bbb;
+	padding: 20px;
+	text-align: center;
+	border-bottom: 20px solid #eee;
+}
+
+#links{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
